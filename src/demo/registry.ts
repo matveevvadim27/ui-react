@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+
 import {
   ButtonDemo,
   DialogDemo,
@@ -8,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -102,6 +103,14 @@ export const registry: ComponentMeta[] = [
     description: "Группа взаимоисключающих вариантов с клавиатурной навигацией",
     status: "done",
     element: RadioGroupDemo,
+  },
+  {
+    slug: "popover",
+    name: "Popover",
+    category: "Overlays",
+    description: "Немодальное всплывающее окно с произвольным интерактивным контентом",
+    status: "done",
+    element: PopoverDemo,
   },
 ];
 

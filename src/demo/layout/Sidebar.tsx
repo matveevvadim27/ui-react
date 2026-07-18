@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
+
 import { registry, groupByCategory } from "@/demo/registry";
+
 import { cn } from "@/utils/cn";
 
 export function Sidebar() {
