@@ -19,3 +19,4 @@ export * from "./AvatarDemo";
 export * from "./SeparatorDemo";
 export * from "./LabelDemo";
 export * from "./HoverCardDemo";
+export * from "./ContextMenuDemo";

@@ -10,7 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo,
+  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo, ContextMenuDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -198,6 +198,14 @@ export const registry: ComponentMeta[] = [
       "Карточка с богатым контентом, открывающаяся при наведении — гибрид Tooltip и Popover",
     status: "done",
     element: HoverCardDemo,
+  },
+  {
+    slug: "context-menu",
+    name: "Context Menu",
+    category: "Navigation",
+    description: "Меню по правому клику с checkbox/radio-пунктами и подменю",
+    status: "done",
+    element: ContextMenuDemo,
   },
 ];
 
