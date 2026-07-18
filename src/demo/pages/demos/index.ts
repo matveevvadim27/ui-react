@@ -16,3 +16,5 @@ export * from "./ProgressDemo";
 export * from "./SliderDemo";
 export * from "./ToastDemo";
 export * from "./AvatarDemo";
+export * from "./SeparatorDemo";
+export * from "./LabelDemo";

@@ -10,7 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo, AvatarDemo,
+  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -172,6 +172,23 @@ export const registry: ComponentMeta[] = [
       "Аватар пользователя с автоматическим fallback на инициалы при ошибке загрузки",
     status: "done",
     element: AvatarDemo,
+  },
+  {
+    slug: "separator",
+    name: "Separator",
+    category: "Layout",
+    description: "Визуальный или структурный разделитель контента",
+    status: "done",
+    element: SeparatorDemo,
+  },
+  {
+    slug: "label",
+    name: "Label",
+    category: "Inputs",
+    description:
+      "Доступная подпись для форм-элементов без выделения текста при двойном клике",
+    status: "done",
+    element: LabelDemo,
   },
 ];
 
