@@ -10,6 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
+  ToastDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -153,6 +154,15 @@ export const registry: ComponentMeta[] = [
       "Ползунок выбора числового значения или диапазона с drag и клавиатурной навигацией",
     status: "done",
     element: SliderDemo,
+  },
+  {
+    slug: "toast",
+    name: "Toast",
+    category: "Feedback",
+    description:
+      "Всплывающие уведомления с императивным API, swipe-to-dismiss и очередью",
+    status: "done",
+    element: ToastDemo,
   },
 ];
 
