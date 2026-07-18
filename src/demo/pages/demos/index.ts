@@ -21,3 +21,5 @@ export * from "./LabelDemo";
 export * from "./HoverCardDemo";
 export * from "./ContextMenuDemo";
 export * from "./MenubarDemo";
+export * from "./AspectRatioDemo";
+export * from "./ScrollAreaDemo";

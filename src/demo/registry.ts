@@ -9,8 +9,23 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo, ContextMenuDemo, MenubarDemo,
+  CheckboxDemo,
+  RadioGroupDemo,
+  PopoverDemo,
+  AlertDialogDemo,
+  CollapsibleDemo,
+  ToggleDemo,
+  ProgressDemo,
+  SliderDemo,
+  ToastDemo,
+  AvatarDemo,
+  SeparatorDemo,
+  LabelDemo,
+  HoverCardDemo,
+  ContextMenuDemo,
+  MenubarDemo,
+  ScrollAreaDemo,
+  AspectRatioDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -215,6 +230,22 @@ export const registry: ComponentMeta[] = [
       "Горизонтальное меню в духе десктоп-приложений с roving tabindex между пунктами",
     status: "done",
     element: MenubarDemo,
+  },
+  {
+    slug: "scroll-area",
+    name: "Scroll Area",
+    category: "Layout",
+    description: "Кастомный скроллбар с сохранением нативного поведения скролла",
+    status: "done",
+    element: ScrollAreaDemo,
+  },
+  {
+    slug: "aspect-ratio",
+    name: "Aspect Ratio",
+    category: "Layout",
+    description: "Сохранение фиксированных пропорций контейнера для медиа-контента",
+    status: "done",
+    element: AspectRatioDemo,
   },
 ];
 
