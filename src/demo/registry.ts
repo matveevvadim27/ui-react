@@ -9,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -136,6 +136,14 @@ export const registry: ComponentMeta[] = [
     description: "Кнопка с состоянием вкл/выкл, одиночная и в группе (single/multiple)",
     status: "done",
     element: ToggleDemo,
+  },
+  {
+    slug: "progress",
+    name: "Progress",
+    category: "Feedback",
+    description: "Индикатор прогресса с GPU-анимацией заполнения через transform",
+    status: "done",
+    element: ProgressDemo,
   },
 ];
 
