@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { ButtonDemo, DialogDemo, TooltipDemo } from "@/demo/pages/demos";
+import { ButtonDemo, DialogDemo, DropdownMenuDemo, TooltipDemo } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -34,6 +34,15 @@ export const registry: ComponentMeta[] = [
     description: "Модальное окно поверх контента",
     status: "done",
     element: DialogDemo,
+  },
+  {
+    slug: "dropdown-menu",
+    name: "Dropdown Menu",
+    category: "Navigation",
+    description:
+      "Меню действий с клавиатурной навигацией, checkbox/radio-пунктами и подменю",
+    status: "done",
+    element: DropdownMenuDemo,
   },
 ];
 
