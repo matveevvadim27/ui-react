@@ -5,65 +5,65 @@ export const buttonVariants = cva(
     // base
     "inline-flex items-center justify-center gap-2 whitespace-nowrap",
     "rounded-md text-sm font-medium",
-    "duration-200  transition-all",
+    "duration-200 transition-all",
     // hover
     "hover:cursor-pointer",
-    //disabled
+    // disabled
     "disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none",
     // icons
     "[&_svg]:size-4 [&_svg]:shrink-0",
-    //focus-visible
+    // focus-visible
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-    //active
+    // active
     "active:scale-[0.98]",
   ],
   {
     variants: {
       variant: {
         primary: [
-          //base
-          "bg-primary text-primary-foreground",
-          //hover
-          "hover:bg-primary-hover hover:text-primary-foreground-hover ",
-          //active
-          "active:bg-primary-active",
+          // base
+          "bg-primary text-primary-foreground shadow-sm",
+          // hover
+          "hover:bg-primary-hover hover:text-primary-foreground-hover hover:shadow-md",
+          // active
+          "active:bg-primary-active active:shadow-none",
         ],
         secondary: [
-          //base
-          "bg-secondary text-secondary-foreground",
-          //hover
-          "hover:bg-secondary-hover hover:text-secondary-foreground-hover ",
-          //active
-          "active:bg-secondary-active",
+          // base
+          "bg-secondary text-secondary-foreground shadow-sm",
+          // hover
+          "hover:bg-secondary-hover hover:text-secondary-foreground-hover hover:shadow-md",
+          // active
+          "active:bg-secondary-active active:shadow-none",
         ],
         outline: [
-          //base
-          "border border-input bg-background =",
-          //hover
+          // base
+          "border border-input bg-background",
+          // hover
           "hover:bg-accent hover:text-accent-foreground",
-          //active
+          // active
           "active:bg-accent-active",
         ],
         ghost: [
-          //hover
+          // hover
           "hover:bg-accent hover:text-accent-foreground",
-          //active
+          // active
           "active:bg-accent-active",
         ],
         destructive: [
-          //base
-          "bg-destructive text-destructive-foreground",
-          //hover
-          "hover:bg-destructive-hover hover:text-destructive-foreground-hover ",
-          //active
-          "active:bg-destructive-active",
-          //focus-visible
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-destructive focus-visible:ring-offset-2",
+          // base
+          "bg-destructive text-destructive-foreground shadow-sm",
+          // hover
+          "hover:bg-destructive-hover hover:text-destructive-foreground-hover hover:shadow-md",
+          // active
+          "active:bg-destructive-active active:shadow-none",
+          // focus-visible
+          "focus-visible:ring-destructive",
         ],
         link: [
-          //base
+          // base
           "text-primary underline-offset-4",
-          //hover
+          // hover
           "hover:underline",
         ],
       },
