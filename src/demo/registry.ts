@@ -10,7 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo, ContextMenuDemo,
+  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo, ContextMenuDemo, MenubarDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -206,6 +206,15 @@ export const registry: ComponentMeta[] = [
     description: "Меню по правому клику с checkbox/radio-пунктами и подменю",
     status: "done",
     element: ContextMenuDemo,
+  },
+  {
+    slug: "menubar",
+    name: "Menubar",
+    category: "Navigation",
+    description:
+      "Горизонтальное меню в духе десктоп-приложений с roving tabindex между пунктами",
+    status: "done",
+    element: MenubarDemo,
   },
 ];
 
