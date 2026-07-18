@@ -9,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -120,6 +120,14 @@ export const registry: ComponentMeta[] = [
       "Модальное окно для критичных подтверждений — не закрывается кликом снаружи или Esc",
     status: "done",
     element: AlertDialogDemo,
+  },
+  {
+    slug: "collapsible",
+    name: "Collapsible",
+    category: "Layout",
+    description: "Одиночный сворачиваемый блок контента с анимацией высоты",
+    status: "done",
+    element: CollapsibleDemo,
   },
 ];
 
