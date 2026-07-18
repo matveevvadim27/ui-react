@@ -11,3 +11,4 @@ export * from "./RadioGroupDemo";
 export * from "./PopoverDemo";
 export * from "./AlertDialogDemo";
 export * from "./CollapsibleDemo";
+export * from "./ToggleDemo";

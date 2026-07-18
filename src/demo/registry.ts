@@ -9,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -128,6 +128,14 @@ export const registry: ComponentMeta[] = [
     description: "Одиночный сворачиваемый блок контента с анимацией высоты",
     status: "done",
     element: CollapsibleDemo,
+  },
+  {
+    slug: "toggle",
+    name: "Toggle",
+    category: "Inputs",
+    description: "Кнопка с состоянием вкл/выкл, одиночная и в группе (single/multiple)",
+    status: "done",
+    element: ToggleDemo,
   },
 ];
 
