@@ -10,7 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo,
+  ToastDemo, AvatarDemo, SeparatorDemo, LabelDemo, HoverCardDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -189,6 +189,15 @@ export const registry: ComponentMeta[] = [
       "Доступная подпись для форм-элементов без выделения текста при двойном клике",
     status: "done",
     element: LabelDemo,
+  },
+  {
+    slug: "hover-card",
+    name: "Hover Card",
+    category: "Overlays",
+    description:
+      "Карточка с богатым контентом, открывающаяся при наведении — гибрид Tooltip и Popover",
+    status: "done",
+    element: HoverCardDemo,
   },
 ];
 

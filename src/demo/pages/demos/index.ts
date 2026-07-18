@@ -18,3 +18,4 @@ export * from "./ToastDemo";
 export * from "./AvatarDemo";
 export * from "./SeparatorDemo";
 export * from "./LabelDemo";
+export * from "./HoverCardDemo";
