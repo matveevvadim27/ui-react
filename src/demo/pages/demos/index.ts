@@ -9,3 +9,4 @@ export * from "./AccordionDemo";
 export * from "./SwitchDemo";
 export * from "./RadioGroupDemo";
 export * from "./PopoverDemo";
+export * from "./AlertDialogDemo";

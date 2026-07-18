@@ -9,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -111,6 +111,15 @@ export const registry: ComponentMeta[] = [
     description: "Немодальное всплывающее окно с произвольным интерактивным контентом",
     status: "done",
     element: PopoverDemo,
+  },
+  {
+    slug: "alert-dialog",
+    name: "Alert Dialog",
+    category: "Overlays",
+    description:
+      "Модальное окно для критичных подтверждений — не закрывается кликом снаружи или Esc",
+    status: "done",
+    element: AlertDialogDemo,
   },
 ];
 
