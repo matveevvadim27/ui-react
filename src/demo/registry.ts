@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { ButtonDemo, DialogDemo, DropdownMenuDemo, TabsDemo, TooltipDemo } from "@/demo/pages/demos";
+import { ButtonDemo, DialogDemo, DropdownMenuDemo, SelectDemo, TabsDemo, TooltipDemo } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -51,6 +51,15 @@ export const registry: ComponentMeta[] = [
     description: "Переключение между секциями контента с roving tabindex навигацией",
     status: "done",
     element: TabsDemo,
+  },
+  {
+    slug: "select",
+    name: "Select",
+    category: "Inputs",
+    description:
+      "Выпадающий список выбора значения с группами, поиском по буквам и скроллом",
+    status: "done",
+    element: SelectDemo,
   },
 ];
 
