@@ -1,5 +1,7 @@
 import type { ComponentType } from "react";
 import { ButtonDemo, DialogDemo, DropdownMenuDemo, SelectDemo, TabsDemo, TooltipDemo } from "@/demo/pages/demos";
+import { AccordionDemo } from "@/demo/pages/demos/AccordionDemo";
+import { CheckboxDemo } from "@/demo/pages/demos/CheckboxDemo";
 
 export interface ComponentMeta {
   slug: string;
@@ -60,6 +62,22 @@ export const registry: ComponentMeta[] = [
       "Выпадающий список выбора значения с группами, поиском по буквам и скроллом",
     status: "done",
     element: SelectDemo,
+  },
+  {
+    slug: "accordion",
+    name: "Accordion",
+    category: "Layout",
+    description: "Раскрываемые секции контента с плавной анимацией высоты",
+    status: "done",
+    element: AccordionDemo,
+  },
+  {
+    slug: "checkbox",
+    name: "Checkbox",
+    category: "Inputs",
+    description: "Чекбокс с поддержкой indeterminate-состояния для групповых выборов",
+    status: "done",
+    element: CheckboxDemo,
   },
 ];
 
