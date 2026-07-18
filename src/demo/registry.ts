@@ -9,7 +9,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo,
+  CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -144,6 +144,15 @@ export const registry: ComponentMeta[] = [
     description: "Индикатор прогресса с GPU-анимацией заполнения через transform",
     status: "done",
     element: ProgressDemo,
+  },
+  {
+    slug: "slider",
+    name: "Slider",
+    category: "Inputs",
+    description:
+      "Ползунок выбора числового значения или диапазона с drag и клавиатурной навигацией",
+    status: "done",
+    element: SliderDemo,
   },
 ];
 
