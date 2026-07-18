@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { ButtonDemo } from "@/demo/pages/demos";
+import { ButtonDemo, TooltipDemo } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -24,7 +24,8 @@ export const registry: ComponentMeta[] = [
     name: "Tooltip",
     category: "Overlays",
     description: "Всплывающая подсказка при наведении/фокусе",
-    status: "planned",
+    status: "done",
+    element: TooltipDemo,
   },
   {
     slug: "dialog",
