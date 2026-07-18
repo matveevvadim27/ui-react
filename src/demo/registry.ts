@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import { ButtonDemo } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -15,7 +16,8 @@ export const registry: ComponentMeta[] = [
     name: "Button",
     category: "Inputs",
     description: "Базовый триггер действия с вариантами и размерами",
-    status: "planned",
+    status: "done",
+    element: ButtonDemo,
   },
   {
     slug: "tooltip",

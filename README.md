@@ -1,77 +1,49 @@
-# React + TypeScript + Vite
+# React UI Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Личная библиотека переиспользуемых React-компонентов. Репозиторий создан для практики: разбор паттернов React, TypeScript, работы с [Radix UI](https://www.radix-ui.com/) и организации кодовой базы по стандартам, близким к продакшену.
 
-Currently, two official plugins are available:
+## Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** — новые паттерны работы с `ref` без `forwardRef`
+- **TypeScript** (strict mode) — с упором на строгую типизацию, discriminated unions, generics
+- **Radix UI** — headless-примитивы (доступность, поведение) под кастомную стилизацию
+- **Tailwind CSS v4** — CSS-first конфигурация через `@theme`
+- **class-variance-authority (CVA)** — управление вариантами компонентов
+- **Vite** — сборка демо-приложения
+- **React Router** — навигация по каталогу компонентов
+- **ESLint + Prettier** — строгий линтинг и форматирование
 
-## React Compiler
+## Паттерн компонента
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Каждый компонент в `src/ui/*` состоит из трёх файлов:
 
-Note: This will impact Vite dev & build performances.
+| Файл | Назначение |
+|---|---|
+| `*.variants.ts` | Стилевые варианты через CVA — без React-логики |
+| `*.types.ts` | Типы пропсов, включая варианты из CVA (`VariantProps`) |
+| `*.tsx` | Реализация компонента |
 
-## Expanding the ESLint configuration
+## Работа с цветами
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Все цвета заданы как CSS-переменные в `src/styles/globals.css` через директиву `@theme` (Tailwind v4):
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```css
+@theme {
+  --color-primary: hsl(217 91% 60%);
+  --color-primary-hover: hsl(217 91% 53%);
+  --color-primary-active: hsl(217 91% 46%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  /* ... */
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Для каждого смыслового цвета (`primary`, `secondary`, `destructive`, `accent`, `muted`) заведены отдельные токены под состояния `hover` и `active` — вместо вычисления через прозрачность (`/90`), чтобы цвет был предсказуемым и не зависел от фона.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Запуск
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
+
+Откроется демо-приложение с навигацией по всем компонентам и их вариантами/состояниями.
