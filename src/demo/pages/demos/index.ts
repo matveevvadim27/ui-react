@@ -15,3 +15,4 @@ export * from "./ToggleDemo";
 export * from "./ProgressDemo";
 export * from "./SliderDemo";
 export * from "./ToastDemo";
+export * from "./AvatarDemo";

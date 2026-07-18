@@ -10,7 +10,7 @@ import {
   TooltipDemo,
   AccordionDemo,
   CheckboxDemo, RadioGroupDemo, PopoverDemo, AlertDialogDemo, CollapsibleDemo, ToggleDemo, ProgressDemo, SliderDemo,
-  ToastDemo,
+  ToastDemo, AvatarDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -163,6 +163,15 @@ export const registry: ComponentMeta[] = [
       "Всплывающие уведомления с императивным API, swipe-to-dismiss и очередью",
     status: "done",
     element: ToastDemo,
+  },
+  {
+    slug: "avatar",
+    name: "Avatar",
+    category: "Layout",
+    description:
+      "Аватар пользователя с автоматическим fallback на инициалы при ошибке загрузки",
+    status: "done",
+    element: AvatarDemo,
   },
 ];
 
