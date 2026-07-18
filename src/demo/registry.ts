@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { ButtonDemo, TooltipDemo } from "@/demo/pages/demos";
+import { ButtonDemo, DialogDemo, TooltipDemo } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -32,7 +32,8 @@ export const registry: ComponentMeta[] = [
     name: "Dialog",
     category: "Overlays",
     description: "Модальное окно поверх контента",
-    status: "planned",
+    status: "done",
+    element: DialogDemo,
   },
 ];
 
