@@ -27,6 +27,8 @@
     --color-accent-active: hsl(210 40% 84%);
     --color-accent-foreground: hsl(222 47% 11%);
 
+    --color-muted-foreground: hsl(215 16% 47%);
+
     --color-border: hsl(214 32% 91%);
     --color-input: hsl(214 32% 91%);
     --color-ring: hsl(217 91% 60%);
