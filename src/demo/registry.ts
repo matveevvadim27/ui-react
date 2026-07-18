@@ -1,7 +1,15 @@
 import type { ComponentType } from "react";
-import { ButtonDemo, DialogDemo, DropdownMenuDemo, SelectDemo, TabsDemo, TooltipDemo } from "@/demo/pages/demos";
-import { AccordionDemo } from "@/demo/pages/demos/AccordionDemo";
-import { CheckboxDemo } from "@/demo/pages/demos/CheckboxDemo";
+import {
+  ButtonDemo,
+  DialogDemo,
+  DropdownMenuDemo,
+  SelectDemo,
+  SwitchDemo,
+  TabsDemo,
+  TooltipDemo,
+  AccordionDemo,
+  CheckboxDemo,
+} from "@/demo/pages/demos";
 
 export interface ComponentMeta {
   slug: string;
@@ -78,6 +86,14 @@ export const registry: ComponentMeta[] = [
     description: "Чекбокс с поддержкой indeterminate-состояния для групповых выборов",
     status: "done",
     element: CheckboxDemo,
+  },
+  {
+    slug: "switch",
+    name: "Switch",
+    category: "Inputs",
+    description: "Тумблер-переключатель для бинарных настроек",
+    status: "done",
+    element: SwitchDemo,
   },
 ];
 

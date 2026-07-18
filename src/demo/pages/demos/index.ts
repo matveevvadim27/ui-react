@@ -4,3 +4,6 @@ export * from "./DialogDemo";
 export * from "./DropdownMenuDemo";
 export * from "./TabsDemo";
 export * from "./SelectDemo";
+export * from "./CheckboxDemo";
+export * from "./AccordionDemo";
+export * from "./SwitchDemo";
