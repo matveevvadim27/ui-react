@@ -8,7 +8,7 @@ import {
   TabsDemo,
   TooltipDemo,
   AccordionDemo,
-  CheckboxDemo,
+  CheckboxDemo, RadioGroupDemo,
 } from "@/demo/pages/demos";
 
 export interface ComponentMeta {
@@ -94,6 +94,14 @@ export const registry: ComponentMeta[] = [
     description: "Тумблер-переключатель для бинарных настроек",
     status: "done",
     element: SwitchDemo,
+  },
+  {
+    slug: "radio-group",
+    name: "Radio Group",
+    category: "Inputs",
+    description: "Группа взаимоисключающих вариантов с клавиатурной навигацией",
+    status: "done",
+    element: RadioGroupDemo,
   },
 ];
 

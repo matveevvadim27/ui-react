@@ -7,3 +7,4 @@ export * from "./SelectDemo";
 export * from "./CheckboxDemo";
 export * from "./AccordionDemo";
 export * from "./SwitchDemo";
+export * from "./RadioGroupDemo";
